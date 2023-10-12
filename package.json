@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "dev": "nodemon src/index.js --ignore client",
-    "debug": "node --inspect src/index.js"
+    "debug": "node --inspect src/index.js",
+    "start": "node src/index.js"
   },
   "keywords": [],
   "author": "",
