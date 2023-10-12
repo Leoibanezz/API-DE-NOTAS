@@ -18,7 +18,7 @@ function CreateNote() {
   const [editing, setEditing] = useState(false);
   const params = useParams();
   const navigate = useNavigate();
-  const URL_CREATENOTE = "http://localhost:4000/api/notes"; 
+  const URL_CREATENOTE = "https://api-notas-nxr9.onrender.com/api/notes"; 
 
   
 

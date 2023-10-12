@@ -17,7 +17,7 @@ export default class CreateUser extends Component {
     }
 
     getUsers = async () => {
-        const res = await axios.get('http://localhost:4000/api/users');
+        const res = await axios.get('https://api-notas-nxr9.onrender.com/api/users');
         this.setState({
             users: res.data
         });
@@ -44,7 +44,7 @@ export default class CreateUser extends Component {
 
     onSubmit = async (e) => {
         e.preventDefault();
-        await axios.post('http://localhost:4000/api/auth/signup', {
+        await axios.post('https://api-notas-nxr9.onrender.com/api/auth/signup', {
             email: this.state.email,
             fullname: this.state.fullname,
             password: this.state.password,
@@ -59,7 +59,7 @@ export default class CreateUser extends Component {
     deleteUser = async (userId) => {
         const response = window.confirm('are you sure you want to delete it?');
         if (response) {
-            await axios.delete('http://localhost:4000/api/users/' + userId);
+            await axios.delete('https://api-notas-nxr9.onrender.com/api/users/' + userId);
             this.getUsers();
         }
     }

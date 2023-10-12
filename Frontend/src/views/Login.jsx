@@ -7,7 +7,7 @@ export default function Login() {
     const [password, setPassword] = useState('');
     const navigate = useNavigate();
 
-    const URL = "http://localhost:4000/api/auth/signin"
+    const URL = "https://api-notas-nxr9.onrender.com/api/auth/signin"
     const login = async () => {
         try {
             const header = {'Content-Type': 'application/json'};   
